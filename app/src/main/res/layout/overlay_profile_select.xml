@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay_background">
+
+    <LinearLayout
+        android:layout_width="@dimen/overlay_card_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_overlay_card"
+        android:orientation="vertical"
+        android:padding="@dimen/overlay_card_padding"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_profile_title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_large" />
+
+        <LinearLayout
+            android:id="@+id/profileButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+</FrameLayout>
