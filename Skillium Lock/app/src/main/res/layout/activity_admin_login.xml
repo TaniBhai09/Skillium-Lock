@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_screen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_login_title"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margin_small" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_login_subtitle"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_medium"
+        android:layout_marginBottom="@dimen/margin_large" />
+
+    <EditText
+        android:id="@+id/adminPasswordInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edit_text"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:padding="@dimen/padding_medium"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_large"
+        android:textColorHint="@color/text_hint"
+        android:hint="● ● ● ●"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <Button
+        android:id="@+id/adminLoginButton"
+        style="@style/DashboardButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+</LinearLayout>
